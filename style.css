@@ -1,13 +1,33 @@
 body {
   margin: 0;
+  font-family: "Open Sans";
+
+  background: linear-gradient(180deg, rgba(227, 255, 248, 0.02)82.08%, rgba(227,255,248,0.38)100% );
+
+  min-height: 100vh;
 }
 
 .page {
   width: 1000px;
-  margin: 65px auto 0px;
+  margin:0 auto ;
+  padding-top: 65px;
 }
 
-header {
+a {
+  text-decoration: none;
+  color: #1f1534;
+}
+
+ul li a:hover {
+  font-weight: bold;
+}
+
+h1,
+ul {
+  font-family: "Mulish";
+}
+
+nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -20,4 +40,81 @@ ul {
   gap: 48px;
   margin: 0;
   padding: 0;
+}
+
+h1 {
+  margin: 0;
+  font-weight: normal;
+  font-size: 49px;
+  line-height: 56px;
+  color: #1f1534;
+}
+
+h1 span {
+  color: #89c5cc;
+  font-weight: bold;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 85px;
+}
+
+.text {
+  width: 490px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+section p {
+  width: 440px;
+  font-size: 14px;
+  line-height: 28px;
+  color: #7d7987;
+}
+
+button {
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 21px;
+
+  background-color: #69b99d;
+  color: #f9f9f9;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+
+  padding: 0;
+  width: 180px;
+  height: 55px;
+
+  border: 0px;
+  border-radius: 4px;
+
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #60aa90;
+}
+
+footer {
+  text-align: center;
+  margin: 0;
+  font-size: 14px;
+  line-height: 28px;
+  color: #000000;
+}
+
+#balls {
+  position: fixed;
+  right: 0;
+  bottom: 0;
 }
